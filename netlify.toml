@@ -1,0 +1,28 @@
+[build]
+  # Build command
+  command = "npm run build"
+
+  # Directory to publish (Next.js builds to .next by default)
+  publish = ".next"
+
+[build.environment]
+  # Node version (optional but good practice)
+  NODE_VERSION = "18"
+
+# Next.js specific redirects for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Handle Next.js _next static files
+[[redirects]]
+  from = "/_next/*"
+  to = "/_next/:splat"
+  status = 200
+
+# API routes (if you have any)
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
