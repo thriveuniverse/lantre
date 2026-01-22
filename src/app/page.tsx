@@ -20,14 +20,14 @@ export default function Home() {
       img: "/artisanal-bieres.png"
     },
     {
-      title: "Lost Tales",
-      desc: "Tales from the Bourg that whisper through Narbonne",
+      title: t('home.cards.history.title'),
+      desc: t('home.cards.history.desc'),
       link: "/history",
       img: "/histoire.jpg"
     },
     {
-      title: "Discover the Vibe",
-      desc: "See the place and sense the atmosphere",
+      title: t('home.cards.gallery.title'),
+      desc: t('home.cards.gallery.desc'),
       link: "/gallery",
       img: "/logo.jpg"
     }

@@ -46,36 +46,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const restaurantJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Bar",
-    "name": "L'Antre",
-    "image": "https://lantre.netlify.app/logo.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "4 rue Benjamin Cremieux",
-      "addressLocality": "Narbonne",
-      "postalCode": "11100",
-      "addressCountry": "FR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 43.1833,
-      "longitude": 3.0000
-    },
-    "url": "https://lantre.netlify.app",
-    "telephone": "+33468916792",
-    "servesCuisine": ["French", "Bieres", "Vin"],
-    "priceRange": "$$",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "08:00",
-        "closes": "22:00"
-      }
-    ]
-  };
 
   const websiteJsonLd = {
     "@context": "https://schema.org",
@@ -109,10 +79,6 @@ export default function RootLayout({
       `}
     </Script>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(restaurantJsonLd) }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}

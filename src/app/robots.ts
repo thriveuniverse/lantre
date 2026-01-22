@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://letoucan-narbonne.com/sitemap.xml',
+        sitemap: 'https://lantre.netlify.app/sitemap.xml',
     }
 }

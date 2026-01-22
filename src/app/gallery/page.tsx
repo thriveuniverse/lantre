@@ -35,7 +35,6 @@ export default function Gallery() {
                 videoFit="contain"
                 bgColor="#260602"
                 showGradient={false}
-                image="/le-toucan-narbonne (18).png"
             />
 
             <section className="py-24">

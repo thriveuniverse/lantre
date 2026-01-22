@@ -34,9 +34,7 @@ export default function About() {
 
             <Hero
                 title={t('nav.about')}
-                subtitle={t('about.heroSubtitle')}
                 video="/join-us.mp4"
-                image="https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&q=80"
             />
 
             {/* Main Manifesto Section */}
@@ -131,7 +129,7 @@ export default function About() {
                                     <Beer size={20} /> {t('about.ctaButton1')}
                                 </a>
                                 <a
-                                    href="https://instagram.com/letoucannarbonne"
+                                    href="https://instagram.com/lantre.narbonne"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn-outline inline-flex items-center justify-center gap-2"
