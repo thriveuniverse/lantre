@@ -7,7 +7,6 @@
 
 [build.environment]
   # Node version (optional but good practice)
-  NODE_VERSION = "18"
 
 # Next.js specific redirects for SPA routing
 [[redirects]]
