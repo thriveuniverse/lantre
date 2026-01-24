@@ -64,9 +64,9 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:contact@sitename.com" className="flex items-center gap-3 transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>
+                                <a href="mailto:lantre.anientapro@gmail.com" className="flex items-center gap-3 transition-colors" style={{ color: 'var(--text-light)' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent)'} onMouseLeave={(e) => e.currentTarget.style.color = 'var(--text-light)'}>
                                     <Mail size={20} />
-                                    <span>contact@sitename.com</span>
+                                    <span>lantre.anientapro@gmail.com</span>
                                 </a>
                             </li>
                         </ul>

@@ -12,17 +12,16 @@ export default function Gallery() {
     const { t } = useLanguage();
     const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
-    // Placeholder Collection
+    // Media Collection
     const curatedImages = [
-        { url: 'placeholder', title: 'Atmospheric Shots', span: 'md:col-span-2 md:row-span-2' },
-        { url: 'placeholder', title: 'Event Photography', span: 'md:col-span-1 md:row-span-2' },
-        { url: 'placeholder', title: 'Food & Drink', span: 'md:col-span-1 md:row-span-1' },
-        { url: 'placeholder', title: 'Portrait Series', span: 'md:col-span-1 md:row-span-1' },
-        { url: 'placeholder', title: 'Architecture', span: 'md:col-span-2 md:row-span-1' },
-        { url: 'placeholder', title: 'Street Scenes', span: 'md:col-span-1 md:row-span-1' },
-        { url: 'placeholder', title: 'Night Photography', span: 'md:col-span-1 md:row-span-1' },
-        { url: 'placeholder', title: 'Details & Textures', span: 'md:col-span-1 md:row-span-1' },
-        { url: 'placeholder', title: 'Community Moments', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/lantre-vibe1.jpg', title: 'L\'Antre Vibe', span: 'md:col-span-2 md:row-span-2' },
+        { url: '/beer-help.mp4', title: 'Beer Selection', span: 'md:col-span-1 md:row-span-2' },
+        { url: '/chouffe-lantre.jpg', title: 'Chouffe', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/lantre-halloween.jpg', title: 'Halloween Special', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/lantre-food2.jpg', title: 'Tapas Platter', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/lantre-food3.jpg', title: 'Signature Dishes', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/gallery-food1.jpg', title: 'Food & Drinks', span: 'md:col-span-1 md:row-span-1' },
+        { url: '/gallery-Alex1.jpg', title: 'Good Times', span: 'md:col-span-1 md:row-span-1' },
     ];
 
     return (
@@ -52,43 +51,46 @@ export default function Gallery() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
-                        {curatedImages.map((img, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.05 }}
-                                onClick={() => img.url !== 'placeholder' && setSelectedImg(img.url)}
-                                className={`group relative rounded-[2.5rem] overflow-hidden ${img.url !== 'placeholder' ? 'cursor-pointer' : ''} shadow-soft transition-all duration-700 hover:shadow-2xl ${img.span}`}
-                                style={{ background: 'var(--surface)' }}
-                            >
-                                {img.url === 'placeholder' ? (
-                                    <div className="w-full h-full bg-gradient-to-br from-accent/10 to-primary/10 flex flex-col items-center justify-center text-center p-6 transition-transform duration-1000 group-hover:scale-105">
-                                        <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mb-4">
-                                            <span className="text-2xl text-accent/60">📷</span>
-                                        </div>
-                                        <p className="text-accent/70 font-serif text-sm italic">{img.title}</p>
-                                        <p className="text-accent/50 text-xs mt-2 uppercase tracking-wider">Coming Soon</p>
-                                    </div>
-                                ) : (
-                                    <img
-                                        src={img.url}
-                                        alt={img.title}
-                                        className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                                    />
-                                )}
-                                {/* Soft Overlay */}
-                                {img.url !== 'placeholder' && (
+                        {curatedImages.map((img, idx) => {
+                            const isVideo = img.url.endsWith('.mp4');
+                            return (
+                                <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: idx * 0.05 }}
+                                    onClick={() => setSelectedImg(img.url)}
+                                    className={`group relative rounded-[2.5rem] overflow-hidden cursor-pointer shadow-soft transition-all duration-700 hover:shadow-2xl ${img.span}`}
+                                    style={{ background: 'var(--surface)' }}
+                                >
+                                    {isVideo ? (
+                                        <video
+                                            src={img.url}
+                                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                            muted
+                                            autoPlay
+                                            loop
+                                            playsInline
+                                        />
+                                    ) : (
+                                        <img
+                                            src={img.url}
+                                            alt={img.title}
+                                            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                                        />
+                                    )}
+
+                                    {/* Soft Overlay */}
                                     <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
                                         <div className="text-white text-center p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                             <Maximize2 size={32} className="mx-auto mb-4 opacity-80" />
                                             <p className="font-serif text-xl italic">{img.title}</p>
                                         </div>
                                     </div>
-                                )}
-                            </motion.div>
-                        ))}
+                                </motion.div>
+                            );
+                        })}
                     </div>
 
                     <div className="mt-24 text-center">
@@ -112,14 +114,27 @@ export default function Gallery() {
                         <button className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors">
                             <X size={40} />
                         </button>
-                        <motion.img
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            exit={{ scale: 0.9, opacity: 0 }}
-                            src={selectedImg}
-                            className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl"
-                            onClick={(e) => e.stopPropagation()}
-                        />
+                        {selectedImg.endsWith('.mp4') ? (
+                            <motion.video
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
+                                src={selectedImg}
+                                className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl"
+                                controls
+                                autoPlay
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                        ) : (
+                            <motion.img
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
+                                src={selectedImg}
+                                className="max-w-full max-h-full object-contain rounded-2xl shadow-2xl"
+                                onClick={(e) => e.stopPropagation()}
+                            />
+                        )}
                     </motion.div>
                 )}
             </AnimatePresence>

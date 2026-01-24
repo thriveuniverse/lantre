@@ -1,6 +1,6 @@
-# Le Toucan - Website
+# L'Antre - Website
 
-A modern, welcoming website for Le Toucan bar in Narbonne, France.
+A modern, welcoming website for LÁntre bar in Narbonne, France.
 
 ## Features
 - **Next.js 15+** with App Router for fast performance.
@@ -35,4 +35,3 @@ This site is optimized for static hosting on **Netlify**.
 Since this is a static site with no backend, there are no databases or servers to maintain. It's built to last!
 
 ---
-Built with ❤️ for Duncan Boyer.
