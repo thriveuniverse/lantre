@@ -67,7 +67,33 @@
     },
     "history": {
         "title": "Échos des Voûtes",
-        "content": "Sous les rues du Bourg de Narbonne, les caves de L'Antre gardent des secrets depuis plus de sept siècles. Construites vers 1250 comme partie de la Maison Consulaire du Bourg — un centre administratif et commercial —, ces voûtes ont vu passer marchands, consuls et peut-être même des ombres en fuite.\n\nLes murmures parlent de passages cachés vers la Robine (ancien lit de l'Aude), de refuges pour Cathares pendant la croisade albigeoise, d'un consul qui aurait enterré une pièce d'or porte-bonheur (et malédiction) dans les fondations, et de tunnels qui s'étendraient jusqu'à l'abbaye de Fontfroide.\n\nAujourd'hui, ces mêmes pierres abritent des bières artisanales, des planches de saucisson et des conversations qui défient le temps. L'Antre n'est pas qu'un bar — c'est un refuge où l'histoire se boit à la pression."
+        "intro": "Profondément sous le quartier du Bourg de Narbonne, dans l'étreinte fraîche des pierres des caves de L'Antre, l'histoire ne fait pas que persister — elle murmure. Ces voûtes, nées au XIIIe siècle, ont vu le commerce fleurir, des secrets enfouis et des ombres s'enfuir. Ce qui suit ne sont pas des faits poussiéreux, mais le genre d'histoires locales que l'on s'échange autour d'une pinte : moitié légende, moitié leurre, tout en intrigue. Tire un tabouret. Écoute bien. Les pierres pourraient bien t'en dire plus.",
+        "century13": {
+            "title": "XIIIe Siècle : Les Ombres de la Forge (La Naissance Cachée)",
+            "p1": "Vers 1250, la Maison Consulaire du Bourg s'élève du calcaire — comme une forteresse pour marchands et consuls dans le chaos riverain du Bourg. Au milieu des marteaux et du mortier, les premiers murmures s'veillent : des passages cachés serpentant en dessous, creusés pour des raisons sournoises. Des tunnels pour faire passer épices et soies vers le bord de l'Aude (cette veine sauvage maintenant domptée sous le nom de Canal de la Robine), ou des cachettes contre les inondations, les raids ou une querelle de guilde un peu trop chaude.",
+            "p2": "Puis vient le vent glacial de la Croisade — la tempête albigeoise de 1209–1229. La rumeur dit qu'un consul rebelle, faisant un pied de nez aux archevêques, aurait caché une bande de \"parfaits\" Cathares dans ces mêmes voûtes. Des parias avec des parchemins interdits et une foi ardente, tapis avec du pain volé et des herbes, complotant leur fuite vers les Pyrénées. L'humidité des caves ? Idéale pour des fantômes en attente. Pas de preuve, attention — juste le genre d'histoire qui te fait regarder les ombres bizarrement."
+        },
+        "century13_14": {
+            "title": "XIIIe–XIVe Siècles : Le Pari Enfoui (Le Cœur Sauvage du Commerce)",
+            "p1": "Alors que draps et teintures inondent les marchés, un consul avisé (peut-être ce même défiant de la Croisade) joue sur le long terme. Il glisse une unique pièce d'or — frappée des coffres des comtes de Toulouse — dans les fondations, un \"porte-bonheur\" pour assurer une richesse sans fin à sa lignée et au quartier. Déterre-la, taquine la légende, et la richesse pleuvra... mais aussi la démangeaison des routes infinies, miroir de ces marchands vagabonds qui chassaient les affaires de l'aube au crépuscule.",
+            "p2": "C'est un appât à carte au trésor, pur et simple — un clin d'œil à l'âme de joueur du Bourg, où chaque rouleau de tissu cachait un risque. Pourtant, les gens se demandent : cet éclat sous nos pieds est-il la clé de la fortune... ou juste une autre malédiction sans repos ?"
+        },
+        "medieval": {
+            "title": "Médiéval à l'Époque Moderne : Les Murmures Incessants (Des Échos Qui Ne S'arrêtent Jamais)",
+            "p1": "Les générations passent, et la grande salle au-dessus bourdonne de clashs consulaires et de grognements de guildes. Mais les pierres ? Elles gardent tout. Viens un soir calme — vents d'équinoxe secouant l'Aude — certains jurent saisir des bribes de vieil occitan remontant d'en bas : trocs vifs sur la laine, votes tonitruants sur les tarifs, ou le sourd grondement d'affaires conclues dans le noir. Comme si les murs appuyaient sur replay quand personne ne regarde.",
+            "p2": "Le feu civique jamais totalement éteint ; il mijote, attendant une rafale. La prochaine fois que tu sirotes une bière ici, tends l'oreille. C'est peut-être la gueule de bois de l'histoire... ou juste les voûtes qui te rappellent qui dirige vraiment."
+        },
+        "ages": {
+            "title": "À Travers les Âges : Les Veines Infinies (Tunnels vers le Bord)",
+            "p1": "Ce qui commence comme des courses rapides vers la rivière gonfle en saga : des souterrains s'étendant sauvagement, tissant le ventre du Bourg comme des racines oubliées. Un fil relie ces caves (ou des proches, disons la basilique Saint-Paul-Serge) directement à l'abbaye de Fontfroide, à 15 bornes dans les dents déchiquetées des Corbières. Autoroute des fugitifs, peut-être — Cathares esquivant les torches, moines égarés esquivant les vœux, ou un \"roi\" hautain (noble remplaçant en haillons de la Révolution ou schismes religieux) disparaissant dans la nuit.",
+            "p2": "Le flanc du canal de la Robine ? Une bretelle d'accès sournoise dans le récit, mariant anciennes voies d'eau à des mules de minuit ou des dérives désespérées. Aucune âme n'a bravé le trajet complet (ou vécu pour s'en vanter), mais l'attraction perdure : ces profondeurs ont jadis branché le pouls de Narbonne à l'au-delà indompté. Qu'y a-t-il en bas maintenant ? Des épices pourries depuis longtemps... ou un chemin qu'on n'a pas encore cartographié ?"
+        },
+        "conclusion": "Voilà — la playlist brute des voûtes, grattée dans le ventre de Narbonne. Pas de l'évangile, juste du grain qui reste. Si les murmures appellent, ils sont plus forts avec un verre à la main. Ton avis — quelle histoire te fait jeter un œil au sol ?",
+        "cta": {
+            "title": "Prêt pour plus d'histoires ?",
+            "text": "Ces voûtes gardent plus de secrets que nous n'en avons partagés. Viens visiter L'Antre et entends les histoires de première main autour d'une bière artisanale.",
+            "button": "En Savoir Plus sur Nous"
+        }
     },
     "footer": {
         "rights": "Tous droits réservés.",

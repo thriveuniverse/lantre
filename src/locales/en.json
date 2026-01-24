@@ -66,8 +66,34 @@
         "ctaButton2": "Follow us on Instagram"
     },
     "history": {
-        "title": "Echoes of the Vaults",
-        "content": "Under the streets of the Bourg de Narbonne, L'Antre's cellars keep secrets dating back more than seven centuries. Built around 1250 as part of the Maison Consulaire du Bourg—an administrative and commercial center—these vaults have seen merchants, consuls, and perhaps fleeing shadows pass through.\n\nWhispers speak of hidden passages to the Robine (ancient bed of the Aude), refuges for Cathars during the Albigensian Crusade, a consul who supposedly buried a lucky (and cursed) gold coin in the foundations, and tunnels extending to the Abbey of Fontfroide.\n\nToday, these same stones shelter artisanal beers, saucisson platters, and conversations that defy time. L'Antre isn't just a bar—it's a refuge where history is drunk in 13th-century stone."
+        "title": "Echoes from the Vaults",
+        "intro": "Deep beneath Narbonne's Bourg quarter, in the cool stone embrace of L'Antre's cellars, history doesn't just linger—it whispers. These vaults, born from the 13th century, have seen trade flourish, secrets buried, and shadows flee. What follows isn't dusty facts, but the kind of local tales that locals swap over a pint: half-legend, half-lure, all intrigue. Pull up a stool. Listen close. The stones might just tell you more.",
+        "century13": {
+            "title": "13th Century: Shadows of the Forge (The Hidden Birth)",
+            "p1": "Around 1250, the Maison Consulaire du Bourg rises from the limestone—like a fortress for merchants and consuls in the river-hugging chaos of the Bourg. Amid the hammers and mortar, the first whispers stir: hidden passages snaking below, carved for sly reasons. Tunnels to shuttle spices and silks to the Aude's edge (that wild vein now tamed as the Canal de la Robine), or bolt-holes against floods, raids, or the odd heated guild spat.",
+            "p2": "Then comes the Crusade's chill wind—the Albigensian storm of 1209–1229. Rumor has it a rogue consul, thumbing his nose at the archbishops, tucked a band of Cathar \"perfects\" into these very vaults. Outcasts with banned scrolls and a firebrand faith, hunkered down with pilfered bread and herbs, plotting their dash to the Pyrenees. The cellars' damp grip? Ideal for ghosts-in-waiting. No proof, mind—just the kind of yarn that makes you eye the shadows funny."
+        },
+        "century13_14": {
+            "title": "13th–14th Centuries: The Buried Gamble (Trade's Wild Heart)",
+            "p1": "As drapes and dyes flood the markets, a canny consul (maybe that same Crusade-defier) plays a long game. He slips a lone gold coin—stamped from the counts of Toulouse's coffers—into the foundations, a \"luck charm\" to lock in endless coin for his kin and the quarter. Unearth it, the tale teases, and riches rain down... but so does the itch of endless roads, mirroring those footloose traders who chased deals from dawn to dusk.",
+            "p2": "It's treasure-map bait, pure and simple—a nod to the Bourg's gambler's soul, where every bolt of cloth hid a risk. Still, folks wonder: is that glint underfoot the key to fortune... or just another restless curse?"
+        },
+        "medieval": {
+            "title": "Medieval to Early Modern: The Restless Murmurs (Echoes That Won't Quit)",
+            "p1": "Generations grind on, and the grand hall upstairs hums with consul clashes and guild growls. But the stones? They hoard it all. Come a hushed evening—equinox winds rattling the Aude—some swear they catch snatches of old Occitan drifting up: sharp barters over wool, thunderous votes on tariffs, or the low rumble of deals done in the dark. Like the walls hit replay when no one's looking.",
+            "p2": "Civic fire never fully snuffed; it simmers, waiting for a gust. Next time you're nursing a brew down here, strain an ear. Might be history's hangover... or just the vaults reminding you who's really in charge."
+        },
+        "ages": {
+            "title": "Across the Ages: The Endless Veins (Tunnels to the Edge)",
+            "p1": "What kicks off as quick-draw river runs balloons into saga stuff: souterrains sprawling wild, threading the Bourg's underbelly like forgotten roots. One thread hooks these cellars (or kin nearby, say the basilique Saint-Paul-Serge) straight to Fontfroide Abbey, 15 klicks into the Corbières' jagged teeth. Fugitives' highway, maybe—Cathars dodging torches, wayward monks dodging vows, or some haughty \"roi\" (noble pinch-hitter in Revolution rags or religious rifts) vanishing into the night.",
+            "p2": "The Robine canal's flank? A sneaky on-ramp in the telling, wedding ancient water-ways to midnight mules or desperate drifts. No soul's braved the full haul (or lived to brag), but the pull endures: these depths once wired Narbonne's pulse to the untamed beyond. What's down there now? Spices long rotted... or a path we ain't mapped yet?"
+        },
+        "conclusion": "There you have it—the vaults' rough-hewn playlist, scraped from Narbonne's underbelly. Not gospel, just grit that sticks. If the whispers call, they're louder with a glass in hand. What's your take—which tale's got you glancing at the floor?",
+        "cta": {
+            "title": "Ready for More Tales?",
+            "text": "These vaults hold more secrets than we've shared. Come visit L'Antre and hear the stories firsthand over a craft beer.",
+            "button": "Learn More About Us"
+        }
     },
     "footer": {
         "rights": "All rights reserved.",
